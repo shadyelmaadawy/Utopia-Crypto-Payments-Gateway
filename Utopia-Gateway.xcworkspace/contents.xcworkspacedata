@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Utopia-Crypto Payments Port/Utopia-Crypto Payments Port.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UtopiaUtilities/UtopiaUtilities.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UtopiaKit/UtopiaKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Utopia-Crypto Payments Gateway.xcodeproj">
+   </FileRef>
+</Workspace>

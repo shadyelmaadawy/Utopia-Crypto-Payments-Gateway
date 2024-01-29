@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61464F632B5F649400DD9354 /* UserDefaultsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61464F622B5F649400DD9354 /* UserDefaultsEngine.swift */; };
+		61464F6B2B5F667400DD9354 /* StorageManagementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61464F6A2B5F667400DD9354 /* StorageManagementProtocol.swift */; };
+		615007E32B66082400062B29 /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615007E22B66082400062B29 /* AppNavigator.swift */; };
+		615007E62B66085500062B29 /* UtopiaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615007E52B66085500062B29 /* UtopiaKit.framework */; };
+		615007E72B66085500062B29 /* UtopiaKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 615007E52B66085500062B29 /* UtopiaKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		615007EB2B66111300062B29 /* NavigatorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615007EA2B66111300062B29 /* NavigatorProtocols.swift */; };
+		615007EE2B66203800062B29 /* UtopiaBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615007ED2B66203800062B29 /* UtopiaBaseViewModel.swift */; };
+		615007F72B66398600062B29 /* BaseAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615007F62B66398600062B29 /* BaseAppCoordinator.swift */; };
+		6150081A2B669F4200062B29 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615008192B669F4200062B29 /* String+Ext.swift */; };
+		6150081C2B669F6000062B29 /* NSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6150081B2B669F6000062B29 /* NSObject+Ext.swift */; };
+		6150081F2B669F9600062B29 /* UtopiaNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6150081E2B669F9600062B29 /* UtopiaNotifier.swift */; };
+		615008212B66A0BD00062B29 /* UtopiaNotifierProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615008202B66A0BD00062B29 /* UtopiaNotifierProtocols.swift */; };
+		615008262B66A85A00062B29 /* NotifierManagerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615008252B66A85A00062B29 /* NotifierManagerProtocols.swift */; };
+		615008282B66A88400062B29 /* UtopiaNotifierManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615008272B66A88400062B29 /* UtopiaNotifierManager.swift */; };
+		616170912B64BB9F00C04D38 /* EthereumModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616170902B64BB9F00C04D38 /* EthereumModule.swift */; };
+		616170942B64BC9900C04D38 /* EthereumModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616170932B64BC9900C04D38 /* EthereumModuleProtocols.swift */; };
+		616170972B64C2A600C04D38 /* CharacterSet+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616170962B64C2A600C04D38 /* CharacterSet+Ext.swift */; };
+		616170A12B64E10D00C04D38 /* KeyChainEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616170A02B64E10D00C04D38 /* KeyChainEngine.swift */; };
+		616170A32B64E12900C04D38 /* KeyChainManagementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616170A22B64E12900C04D38 /* KeyChainManagementProtocol.swift */; };
+		616170AC2B64E54100C04D38 /* UtopiaVaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616170AB2B64E54100C04D38 /* UtopiaVaultManager.swift */; };
+		616170AE2B64E55100C04D38 /* VaultManagerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616170AD2B64E55100C04D38 /* VaultManagerProtocols.swift */; };
+		6178ED282B654A4400042C6A /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6178ED272B654A4400042C6A /* CoordinatorProtocol.swift */; };
+		618F4C9E2B5F474E0030247D /* Utilities.docc in Sources */ = {isa = PBXBuildFile; fileRef = 618F4C9D2B5F474E0030247D /* Utilities.docc */; };
+		618F4C9F2B5F474E0030247D /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 618F4C9C2B5F474E0030247D /* Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		618F4CA82B5F479D0030247D /* CryptographyEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618F4CA72B5F479D0030247D /* CryptographyEngine.swift */; };
+		618F4CAC2B5F47BC0030247D /* CryptographyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618F4CAB2B5F47BC0030247D /* CryptographyProtocols.swift */; };
+		618F4CB22B5F496C0030247D /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 618F4CB12B5F496C0030247D /* CryptoSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		615007E82B66085500062B29 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				615007E72B66085500062B29 /* UtopiaKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		61464F622B5F649400DD9354 /* UserDefaultsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsEngine.swift; sourceTree = "<group>"; };
+		61464F6A2B5F667400DD9354 /* StorageManagementProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManagementProtocol.swift; sourceTree = "<group>"; };
+		615007E22B66082400062B29 /* AppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
+		615007E52B66085500062B29 /* UtopiaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UtopiaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		615007EA2B66111300062B29 /* NavigatorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorProtocols.swift; sourceTree = "<group>"; };
+		615007ED2B66203800062B29 /* UtopiaBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtopiaBaseViewModel.swift; sourceTree = "<group>"; };
+		615007F62B66398600062B29 /* BaseAppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAppCoordinator.swift; sourceTree = "<group>"; };
+		615008192B669F4200062B29 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		6150081B2B669F6000062B29 /* NSObject+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Ext.swift"; sourceTree = "<group>"; };
+		6150081E2B669F9600062B29 /* UtopiaNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtopiaNotifier.swift; sourceTree = "<group>"; };
+		615008202B66A0BD00062B29 /* UtopiaNotifierProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtopiaNotifierProtocols.swift; sourceTree = "<group>"; };
+		615008252B66A85A00062B29 /* NotifierManagerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifierManagerProtocols.swift; sourceTree = "<group>"; };
+		615008272B66A88400062B29 /* UtopiaNotifierManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtopiaNotifierManager.swift; sourceTree = "<group>"; };
+		616170902B64BB9F00C04D38 /* EthereumModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumModule.swift; sourceTree = "<group>"; };
+		616170932B64BC9900C04D38 /* EthereumModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumModuleProtocols.swift; sourceTree = "<group>"; };
+		616170962B64C2A600C04D38 /* CharacterSet+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+Ext.swift"; sourceTree = "<group>"; };
+		616170A02B64E10D00C04D38 /* KeyChainEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainEngine.swift; sourceTree = "<group>"; };
+		616170A22B64E12900C04D38 /* KeyChainManagementProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManagementProtocol.swift; sourceTree = "<group>"; };
+		616170AB2B64E54100C04D38 /* UtopiaVaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtopiaVaultManager.swift; sourceTree = "<group>"; };
+		616170AD2B64E55100C04D38 /* VaultManagerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultManagerProtocols.swift; sourceTree = "<group>"; };
+		6178ED272B654A4400042C6A /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		618F4C992B5F474E0030247D /* UtopiaUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UtopiaUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		618F4C9C2B5F474E0030247D /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		618F4C9D2B5F474E0030247D /* Utilities.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Utilities.docc; sourceTree = "<group>"; };
+		618F4CA72B5F479D0030247D /* CryptographyEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptographyEngine.swift; sourceTree = "<group>"; };
+		618F4CAB2B5F47BC0030247D /* CryptographyProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptographyProtocols.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		618F4C962B5F474E0030247D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618F4CB22B5F496C0030247D /* CryptoSwift in Frameworks */,
+				615007E62B66085500062B29 /* UtopiaKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61464F612B5F647D00DD9354 /* Storage Management */ = {
+			isa = PBXGroup;
+			children = (
+				61464F622B5F649400DD9354 /* UserDefaultsEngine.swift */,
+				61464F6A2B5F667400DD9354 /* StorageManagementProtocol.swift */,
+			);
+			path = "Storage Management";
+			sourceTree = "<group>";
+		};
+		615007E42B66085500062B29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				615007E52B66085500062B29 /* UtopiaKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		615007E92B66110700062B29 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				615007E22B66082400062B29 /* AppNavigator.swift */,
+				615007EA2B66111300062B29 /* NavigatorProtocols.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		615007EC2B66202C00062B29 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				615007ED2B66203800062B29 /* UtopiaBaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		615007EF2B66238100062B29 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				615007F22B66240100062B29 /* Common */,
+				615007F12B6623AA00062B29 /* Presentation Layer */,
+				615007F02B66239D00062B29 /* Navigation Layer */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		615007F02B66239D00062B29 /* Navigation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				6178ED262B654A1E00042C6A /* Coordinator */,
+				615007E92B66110700062B29 /* Navigator */,
+			);
+			path = "Navigation Layer";
+			sourceTree = "<group>";
+		};
+		615007F12B6623AA00062B29 /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				615007EC2B66202C00062B29 /* ViewModel */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		615007F22B66240100062B29 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				616170952B64C28D00C04D38 /* Extensions */,
+				618F4CA52B5F47740030247D /* Configuration */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6150081D2B669F8A00062B29 /* Notification Center */ = {
+			isa = PBXGroup;
+			children = (
+				615008232B66A82A00062B29 /* Notifier Manager */,
+				615008222B66A81F00062B29 /* Notifier */,
+			);
+			path = "Notification Center";
+			sourceTree = "<group>";
+		};
+		615008222B66A81F00062B29 /* Notifier */ = {
+			isa = PBXGroup;
+			children = (
+				615008202B66A0BD00062B29 /* UtopiaNotifierProtocols.swift */,
+				6150081E2B669F9600062B29 /* UtopiaNotifier.swift */,
+			);
+			path = Notifier;
+			sourceTree = "<group>";
+		};
+		615008232B66A82A00062B29 /* Notifier Manager */ = {
+			isa = PBXGroup;
+			children = (
+				615008252B66A85A00062B29 /* NotifierManagerProtocols.swift */,
+				615008272B66A88400062B29 /* UtopiaNotifierManager.swift */,
+			);
+			path = "Notifier Manager";
+			sourceTree = "<group>";
+		};
+		6161708F2B64BB8F00C04D38 /* Ethereum Module */ = {
+			isa = PBXGroup;
+			children = (
+				616170902B64BB9F00C04D38 /* EthereumModule.swift */,
+				616170932B64BC9900C04D38 /* EthereumModuleProtocols.swift */,
+			);
+			path = "Ethereum Module";
+			sourceTree = "<group>";
+		};
+		616170952B64C28D00C04D38 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				616170962B64C2A600C04D38 /* CharacterSet+Ext.swift */,
+				615008192B669F4200062B29 /* String+Ext.swift */,
+				6150081B2B669F6000062B29 /* NSObject+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		616170AA2B64E53800C04D38 /* Vault */ = {
+			isa = PBXGroup;
+			children = (
+				616170AB2B64E54100C04D38 /* UtopiaVaultManager.swift */,
+				616170AD2B64E55100C04D38 /* VaultManagerProtocols.swift */,
+			);
+			path = Vault;
+			sourceTree = "<group>";
+		};
+		6178ED262B654A1E00042C6A /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6178ED272B654A4400042C6A /* CoordinatorProtocol.swift */,
+				615007F62B66398600062B29 /* BaseAppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		618F4C8F2B5F474E0030247D = {
+			isa = PBXGroup;
+			children = (
+				615007E42B66085500062B29 /* Frameworks */,
+				618F4C9A2B5F474E0030247D /* Products */,
+				618F4C9B2B5F474E0030247D /* UtopiaUtilities */,
+			);
+			sourceTree = "<group>";
+		};
+		618F4C9A2B5F474E0030247D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				618F4C992B5F474E0030247D /* UtopiaUtilities.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		618F4C9B2B5F474E0030247D /* UtopiaUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				615007EF2B66238100062B29 /* Core */,
+				618F4CA62B5F478D0030247D /* Cryptography */,
+				6161708F2B64BB8F00C04D38 /* Ethereum Module */,
+				61E82ECA2B63D24B00716241 /* KeyChain */,
+				6150081D2B669F8A00062B29 /* Notification Center */,
+				61464F612B5F647D00DD9354 /* Storage Management */,
+			);
+			path = UtopiaUtilities;
+			sourceTree = "<group>";
+		};
+		618F4CA52B5F47740030247D /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				618F4C9C2B5F474E0030247D /* Utilities.h */,
+				618F4C9D2B5F474E0030247D /* Utilities.docc */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		618F4CA62B5F478D0030247D /* Cryptography */ = {
+			isa = PBXGroup;
+			children = (
+				618F4CA72B5F479D0030247D /* CryptographyEngine.swift */,
+				618F4CAB2B5F47BC0030247D /* CryptographyProtocols.swift */,
+			);
+			path = Cryptography;
+			sourceTree = "<group>";
+		};
+		61E82ECA2B63D24B00716241 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				616170AA2B64E53800C04D38 /* Vault */,
+				616170A02B64E10D00C04D38 /* KeyChainEngine.swift */,
+				616170A22B64E12900C04D38 /* KeyChainManagementProtocol.swift */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		618F4C942B5F474E0030247D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618F4C9F2B5F474E0030247D /* Utilities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		618F4C982B5F474E0030247D /* UtopiaUtilities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 618F4CA22B5F474E0030247D /* Build configuration list for PBXNativeTarget "UtopiaUtilities" */;
+			buildPhases = (
+				618F4C942B5F474E0030247D /* Headers */,
+				618F4C952B5F474E0030247D /* Sources */,
+				618F4C962B5F474E0030247D /* Frameworks */,
+				618F4C972B5F474E0030247D /* Resources */,
+				615007E82B66085500062B29 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UtopiaUtilities;
+			packageProductDependencies = (
+				618F4CB12B5F496C0030247D /* CryptoSwift */,
+			);
+			productName = Utilities;
+			productReference = 618F4C992B5F474E0030247D /* UtopiaUtilities.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		618F4C902B5F474E0030247D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					618F4C982B5F474E0030247D = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 618F4C932B5F474E0030247D /* Build configuration list for PBXProject "UtopiaUtilities" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 618F4C8F2B5F474E0030247D;
+			packageReferences = (
+				618F4CB02B5F496C0030247D /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+			);
+			productRefGroup = 618F4C9A2B5F474E0030247D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				618F4C982B5F474E0030247D /* UtopiaUtilities */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		618F4C972B5F474E0030247D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		618F4C952B5F474E0030247D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61464F632B5F649400DD9354 /* UserDefaultsEngine.swift in Sources */,
+				618F4C9E2B5F474E0030247D /* Utilities.docc in Sources */,
+				615007F72B66398600062B29 /* BaseAppCoordinator.swift in Sources */,
+				616170912B64BB9F00C04D38 /* EthereumModule.swift in Sources */,
+				616170942B64BC9900C04D38 /* EthereumModuleProtocols.swift in Sources */,
+				615008262B66A85A00062B29 /* NotifierManagerProtocols.swift in Sources */,
+				618F4CA82B5F479D0030247D /* CryptographyEngine.swift in Sources */,
+				615007EE2B66203800062B29 /* UtopiaBaseViewModel.swift in Sources */,
+				615008282B66A88400062B29 /* UtopiaNotifierManager.swift in Sources */,
+				616170AC2B64E54100C04D38 /* UtopiaVaultManager.swift in Sources */,
+				616170AE2B64E55100C04D38 /* VaultManagerProtocols.swift in Sources */,
+				6178ED282B654A4400042C6A /* CoordinatorProtocol.swift in Sources */,
+				615007EB2B66111300062B29 /* NavigatorProtocols.swift in Sources */,
+				616170A12B64E10D00C04D38 /* KeyChainEngine.swift in Sources */,
+				6150081A2B669F4200062B29 /* String+Ext.swift in Sources */,
+				615008212B66A0BD00062B29 /* UtopiaNotifierProtocols.swift in Sources */,
+				6150081F2B669F9600062B29 /* UtopiaNotifier.swift in Sources */,
+				615007E32B66082400062B29 /* AppNavigator.swift in Sources */,
+				61464F6B2B5F667400DD9354 /* StorageManagementProtocol.swift in Sources */,
+				616170972B64C2A600C04D38 /* CharacterSet+Ext.swift in Sources */,
+				616170A32B64E12900C04D38 /* KeyChainManagementProtocol.swift in Sources */,
+				618F4CAC2B5F47BC0030247D /* CryptographyProtocols.swift in Sources */,
+				6150081C2B669F6000062B29 /* NSObject+Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		618F4CA02B5F474E0030247D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		618F4CA12B5F474E0030247D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		618F4CA32B5F474E0030247D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y7A8MFWTQP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = shadudiix.com.Utilities;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		618F4CA42B5F474E0030247D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y7A8MFWTQP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = shadudiix.com.Utilities;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		618F4C932B5F474E0030247D /* Build configuration list for PBXProject "UtopiaUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618F4CA02B5F474E0030247D /* Debug */,
+				618F4CA12B5F474E0030247D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		618F4CA22B5F474E0030247D /* Build configuration list for PBXNativeTarget "UtopiaUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618F4CA32B5F474E0030247D /* Debug */,
+				618F4CA42B5F474E0030247D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		618F4CB02B5F496C0030247D /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		618F4CB12B5F496C0030247D /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 618F4CB02B5F496C0030247D /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 618F4C902B5F474E0030247D /* Project object */;
+}

@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		611061122B57588900310490 /* Jotunheimr in Frameworks */ = {isa = PBXBuildFile; productRef = 611061112B57588900310490 /* Jotunheimr */; };
+		611FF5C42B652586003BD5DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611FF5C32B652586003BD5DD /* SceneDelegate.swift */; };
+		611FF5C62B65271C003BD5DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611FF5C52B65271C003BD5DD /* AppDelegate.swift */; };
+		61464F3D2B5F4D4700DD9354 /* EncryptionServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61464F3C2B5F4D4700DD9354 /* EncryptionServiceImplementation.swift */; };
+		61464F6E2B5F6A9D00DD9354 /* NFCServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61464F6D2B5F6A9D00DD9354 /* NFCServiceImplementation.swift */; };
+		61464F722B5F6AD000DD9354 /* InputNFCPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61464F712B5F6AD000DD9354 /* InputNFCPayload.swift */; };
+		61464F7B2B5F7CAF00DD9354 /* Jotunheimr+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61464F7A2B5F7CAF00DD9354 /* Jotunheimr+Ext.swift */; };
+		61464F882B5F8A0300DD9354 /* EncryptionServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61464F872B5F8A0300DD9354 /* EncryptionServiceProtocol.swift */; };
+		61464F8A2B5F8A2200DD9354 /* NFCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61464F892B5F8A2200DD9354 /* NFCServiceProtocol.swift */; };
+		61464F962B5F915600DD9354 /* UtopiaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61464F952B5F915600DD9354 /* UtopiaKit.framework */; };
+		61464F972B5F915600DD9354 /* UtopiaKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 61464F952B5F915600DD9354 /* UtopiaKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		61464F9A2B5F915A00DD9354 /* UtopiaUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61464F992B5F915A00DD9354 /* UtopiaUtilities.framework */; };
+		61464F9B2B5F915A00DD9354 /* UtopiaUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 61464F992B5F915A00DD9354 /* UtopiaUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6150080A2B6673E600062B29 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615008092B6673E600062B29 /* AppCoordinator.swift */; };
+		6150080E2B6674BC00062B29 /* WriteNFCCoordinatorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6150080D2B6674BC00062B29 /* WriteNFCCoordinatorProtocols.swift */; };
+		615008102B6674C800062B29 /* WriteNFCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6150080F2B6674C800062B29 /* WriteNFCCoordinator.swift */; };
+		6161708A2B64ACAF00C04D38 /* ValidatePrivateKeyUseCaseImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616170892B64ACAE00C04D38 /* ValidatePrivateKeyUseCaseImplementation.swift */; };
+		6161708C2B64ACD200C04D38 /* ValidateUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6161708B2B64ACD200C04D38 /* ValidateUseCaseProtocol.swift */; };
+		6178ED162B652A9200042C6A /* UtopiaPortApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6178ED152B652A9200042C6A /* UtopiaPortApp.swift */; };
+		619171D02B54D395006B36EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619171CF2B54D395006B36EA /* Assets.xcassets */; };
+		619171D32B54D395006B36EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619171D22B54D395006B36EA /* Preview Assets.xcassets */; };
+		61A0BEC32B60B4AA0015EAA6 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 61A0BEC22B60B4AA0015EAA6 /* Documentation.docc */; };
+		61A840BF2B60F1EA00B82755 /* WriteNFCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A840BE2B60F1EA00B82755 /* WriteNFCViewModel.swift */; };
+		61A840C12B60F70900B82755 /* WriteUseCaseImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A840C02B60F70900B82755 /* WriteUseCaseImplementation.swift */; };
+		61C90D562B5606EE0075A70B /* WriteNFCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C90D552B5606EE0075A70B /* WriteNFCView.swift */; };
+		61E82EC62B63A36100716241 /* WriteNFCConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E82EC52B63A36100716241 /* WriteNFCConfigurator.swift */; };
+		61E82EC92B63BDAB00716241 /* WriteNFCProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E82EC82B63BDAB00716241 /* WriteNFCProtocols.swift */; };
+		61F3EBA82B61AD5900E593FB /* WriteUserCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F3EBA72B61AD5900E593FB /* WriteUserCaseProtocol.swift */; };
+		61F3EBAA2B61AEAA00E593FB /* NFCRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F3EBA92B61AEAA00E593FB /* NFCRepositoryProtocol.swift */; };
+		61F3EBAC2B61AF0100E593FB /* NFCRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F3EBAB2B61AF0100E593FB /* NFCRepositoryImplementation.swift */; };
+		61F3EBBE2B61C52200E593FB /* NFCWriteRequestMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F3EBBD2B61C52200E593FB /* NFCWriteRequestMessage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		61464F982B5F915700DD9354 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				61464F972B5F915600DD9354 /* UtopiaKit.framework in Embed Frameworks */,
+				61464F9B2B5F915A00DD9354 /* UtopiaUtilities.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		611FF5C32B652586003BD5DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		611FF5C52B65271C003BD5DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61464F3C2B5F4D4700DD9354 /* EncryptionServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionServiceImplementation.swift; sourceTree = "<group>"; };
+		61464F422B5F50B600DD9354 /* Utopia-Crypto Payments-Port.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Utopia-Crypto Payments-Port.entitlements"; sourceTree = "<group>"; };
+		61464F6D2B5F6A9D00DD9354 /* NFCServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCServiceImplementation.swift; sourceTree = "<group>"; };
+		61464F712B5F6AD000DD9354 /* InputNFCPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNFCPayload.swift; sourceTree = "<group>"; };
+		61464F7A2B5F7CAF00DD9354 /* Jotunheimr+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Jotunheimr+Ext.swift"; sourceTree = "<group>"; };
+		61464F872B5F8A0300DD9354 /* EncryptionServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionServiceProtocol.swift; sourceTree = "<group>"; };
+		61464F892B5F8A2200DD9354 /* NFCServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCServiceProtocol.swift; sourceTree = "<group>"; };
+		61464F952B5F915600DD9354 /* UtopiaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UtopiaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61464F992B5F915A00DD9354 /* UtopiaUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UtopiaUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		615008092B6673E600062B29 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		6150080D2B6674BC00062B29 /* WriteNFCCoordinatorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteNFCCoordinatorProtocols.swift; sourceTree = "<group>"; };
+		6150080F2B6674C800062B29 /* WriteNFCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteNFCCoordinator.swift; sourceTree = "<group>"; };
+		616170892B64ACAE00C04D38 /* ValidatePrivateKeyUseCaseImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatePrivateKeyUseCaseImplementation.swift; sourceTree = "<group>"; };
+		6161708B2B64ACD200C04D38 /* ValidateUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateUseCaseProtocol.swift; sourceTree = "<group>"; };
+		6178ED152B652A9200042C6A /* UtopiaPortApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtopiaPortApp.swift; sourceTree = "<group>"; };
+		6178ED1F2B65308D00042C6A /* Utopia-Crypto-Payments-Port-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Utopia-Crypto-Payments-Port-Info.plist"; sourceTree = "<group>"; };
+		619171C82B54D392006B36EA /* Utopia-Crypto Payments Port.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Utopia-Crypto Payments Port.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		619171CF2B54D395006B36EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		619171D22B54D395006B36EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		61A0BEC22B60B4AA0015EAA6 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
+		61A840BE2B60F1EA00B82755 /* WriteNFCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteNFCViewModel.swift; sourceTree = "<group>"; };
+		61A840C02B60F70900B82755 /* WriteUseCaseImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteUseCaseImplementation.swift; sourceTree = "<group>"; };
+		61C90D552B5606EE0075A70B /* WriteNFCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteNFCView.swift; sourceTree = "<group>"; };
+		61E82EC52B63A36100716241 /* WriteNFCConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteNFCConfigurator.swift; sourceTree = "<group>"; };
+		61E82EC82B63BDAB00716241 /* WriteNFCProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteNFCProtocols.swift; sourceTree = "<group>"; };
+		61F3EBA72B61AD5900E593FB /* WriteUserCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteUserCaseProtocol.swift; sourceTree = "<group>"; };
+		61F3EBA92B61AEAA00E593FB /* NFCRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCRepositoryProtocol.swift; sourceTree = "<group>"; };
+		61F3EBAB2B61AF0100E593FB /* NFCRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCRepositoryImplementation.swift; sourceTree = "<group>"; };
+		61F3EBBD2B61C52200E593FB /* NFCWriteRequestMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCWriteRequestMessage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		619171C52B54D392006B36EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				611061122B57588900310490 /* Jotunheimr in Frameworks */,
+				61464F962B5F915600DD9354 /* UtopiaKit.framework in Frameworks */,
+				61464F9A2B5F915A00DD9354 /* UtopiaUtilities.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6100B3942B560577009DD02E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61464F992B5F915A00DD9354 /* UtopiaUtilities.framework */,
+				61464F952B5F915600DD9354 /* UtopiaKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61464F432B5F50C400DD9354 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				6178ED1F2B65308D00042C6A /* Utopia-Crypto-Payments-Port-Info.plist */,
+				61464F422B5F50B600DD9354 /* Utopia-Crypto Payments-Port.entitlements */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		61464F7E2B5F826100DD9354 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				61464F7A2B5F7CAF00DD9354 /* Jotunheimr+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		61464F7F2B5F893D00DD9354 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				61F3EBC02B61CBA000E593FB /* Encryption Service */,
+				61F3EBBF2B61C80C00E593FB /* NFC Service */,
+				61464F822B5F896600DD9354 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		61464F802B5F894200DD9354 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				61464F832B5F899300DD9354 /* Entities */,
+				61464F852B5F89EB00DD9354 /* Interfaces */,
+				61464F8B2B5F8A6D00DD9354 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		61464F812B5F894900DD9354 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				61C90D592B56091D0075A70B /* Modules */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		61464F822B5F896600DD9354 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				61F3EBAB2B61AF0100E593FB /* NFCRepositoryImplementation.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		61464F832B5F899300DD9354 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				61464F712B5F6AD000DD9354 /* InputNFCPayload.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		61464F842B5F89A900DD9354 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6150080B2B66741C00062B29 /* App Coordinator */,
+				61C90D582B5609130075A70B /* Delegates */,
+				61464F7E2B5F826100DD9354 /* Extensions */,
+				61C90D572B5609090075A70B /* Resources */,
+				61A0BEC22B60B4AA0015EAA6 /* Documentation.docc */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		61464F852B5F89EB00DD9354 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				61F3EBAD2B61B08900E593FB /* Repositories */,
+				61464F862B5F89F600DD9354 /* Services */,
+				61F3EBA72B61AD5900E593FB /* WriteUserCaseProtocol.swift */,
+				6161708B2B64ACD200C04D38 /* ValidateUseCaseProtocol.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		61464F862B5F89F600DD9354 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				61464F892B5F8A2200DD9354 /* NFCServiceProtocol.swift */,
+				61464F872B5F8A0300DD9354 /* EncryptionServiceProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		61464F8B2B5F8A6D00DD9354 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				61A840C02B60F70900B82755 /* WriteUseCaseImplementation.swift */,
+				616170892B64ACAE00C04D38 /* ValidatePrivateKeyUseCaseImplementation.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		61464F8C2B5F8AA000DD9354 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61C90D552B5606EE0075A70B /* WriteNFCView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61464F8D2B5F8AB000DD9354 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				61A840BE2B60F1EA00B82755 /* WriteNFCViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6150080B2B66741C00062B29 /* App Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				615008092B6673E600062B29 /* AppCoordinator.swift */,
+			);
+			path = "App Coordinator";
+			sourceTree = "<group>";
+		};
+		6150080C2B66749900062B29 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6150080D2B6674BC00062B29 /* WriteNFCCoordinatorProtocols.swift */,
+				6150080F2B6674C800062B29 /* WriteNFCCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		619171BF2B54D392006B36EA = {
+			isa = PBXGroup;
+			children = (
+				6100B3942B560577009DD02E /* Frameworks */,
+				619171C92B54D392006B36EA /* Products */,
+				619171CA2B54D392006B36EA /* Utopia-Crypto Payments Port */,
+			);
+			sourceTree = "<group>";
+		};
+		619171C92B54D392006B36EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				619171C82B54D392006B36EA /* Utopia-Crypto Payments Port.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		619171CA2B54D392006B36EA /* Utopia-Crypto Payments Port */ = {
+			isa = PBXGroup;
+			children = (
+				61464F842B5F89A900DD9354 /* Application */,
+				61464F7F2B5F893D00DD9354 /* Data */,
+				61464F802B5F894200DD9354 /* Domain */,
+				61464F812B5F894900DD9354 /* Presentation */,
+			);
+			path = "Utopia-Crypto Payments Port";
+			sourceTree = "<group>";
+		};
+		619171D12B54D395006B36EA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				619171D22B54D395006B36EA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		61C90D572B5609090075A70B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				61464F432B5F50C400DD9354 /* Configuration */,
+				619171D12B54D395006B36EA /* Preview Content */,
+				619171CF2B54D395006B36EA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		61C90D582B5609130075A70B /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				611FF5C32B652586003BD5DD /* SceneDelegate.swift */,
+				611FF5C52B65271C003BD5DD /* AppDelegate.swift */,
+				6178ED152B652A9200042C6A /* UtopiaPortApp.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		61C90D592B56091D0075A70B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				61C90D5A2B5609260075A70B /* Write NFC */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		61C90D5A2B5609260075A70B /* Write NFC */ = {
+			isa = PBXGroup;
+			children = (
+				6150080C2B66749900062B29 /* Coordinator */,
+				61E82EC42B63A35100716241 /* Configurator */,
+				61464F8C2B5F8AA000DD9354 /* View */,
+				61464F8D2B5F8AB000DD9354 /* ViewModel */,
+			);
+			path = "Write NFC";
+			sourceTree = "<group>";
+		};
+		61E82EC42B63A35100716241 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				61E82EC52B63A36100716241 /* WriteNFCConfigurator.swift */,
+				61E82EC82B63BDAB00716241 /* WriteNFCProtocols.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		61F3EBAD2B61B08900E593FB /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				61F3EBA92B61AEAA00E593FB /* NFCRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		61F3EBBC2B61C51400E593FB /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				61F3EBBD2B61C52200E593FB /* NFCWriteRequestMessage.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		61F3EBBF2B61C80C00E593FB /* NFC Service */ = {
+			isa = PBXGroup;
+			children = (
+				61F3EBBC2B61C51400E593FB /* Messages */,
+				61464F6D2B5F6A9D00DD9354 /* NFCServiceImplementation.swift */,
+			);
+			path = "NFC Service";
+			sourceTree = "<group>";
+		};
+		61F3EBC02B61CBA000E593FB /* Encryption Service */ = {
+			isa = PBXGroup;
+			children = (
+				61464F3C2B5F4D4700DD9354 /* EncryptionServiceImplementation.swift */,
+			);
+			path = "Encryption Service";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		619171C72B54D392006B36EA /* Utopia-Crypto Payments Port */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 619171D62B54D395006B36EA /* Build configuration list for PBXNativeTarget "Utopia-Crypto Payments Port" */;
+			buildPhases = (
+				619171C42B54D392006B36EA /* Sources */,
+				619171C52B54D392006B36EA /* Frameworks */,
+				619171C62B54D392006B36EA /* Resources */,
+				61464F982B5F915700DD9354 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Utopia-Crypto Payments Port";
+			packageProductDependencies = (
+				611061112B57588900310490 /* Jotunheimr */,
+			);
+			productName = UtopiaNfcWriter;
+			productReference = 619171C82B54D392006B36EA /* Utopia-Crypto Payments Port.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		619171C02B54D392006B36EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					619171C72B54D392006B36EA = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 619171C32B54D392006B36EA /* Build configuration list for PBXProject "Utopia-Crypto Payments Port" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 619171BF2B54D392006B36EA;
+			packageReferences = (
+				611061102B57588900310490 /* XCRemoteSwiftPackageReference "Jotunheimr" */,
+			);
+			productRefGroup = 619171C92B54D392006B36EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				619171C72B54D392006B36EA /* Utopia-Crypto Payments Port */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		619171C62B54D392006B36EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619171D32B54D395006B36EA /* Preview Assets.xcassets in Resources */,
+				619171D02B54D395006B36EA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		619171C42B54D392006B36EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6150080A2B6673E600062B29 /* AppCoordinator.swift in Sources */,
+				611FF5C62B65271C003BD5DD /* AppDelegate.swift in Sources */,
+				61464F8A2B5F8A2200DD9354 /* NFCServiceProtocol.swift in Sources */,
+				6161708C2B64ACD200C04D38 /* ValidateUseCaseProtocol.swift in Sources */,
+				61F3EBA82B61AD5900E593FB /* WriteUserCaseProtocol.swift in Sources */,
+				6178ED162B652A9200042C6A /* UtopiaPortApp.swift in Sources */,
+				61464F882B5F8A0300DD9354 /* EncryptionServiceProtocol.swift in Sources */,
+				61C90D562B5606EE0075A70B /* WriteNFCView.swift in Sources */,
+				61A840BF2B60F1EA00B82755 /* WriteNFCViewModel.swift in Sources */,
+				6150080E2B6674BC00062B29 /* WriteNFCCoordinatorProtocols.swift in Sources */,
+				615008102B6674C800062B29 /* WriteNFCCoordinator.swift in Sources */,
+				61A0BEC32B60B4AA0015EAA6 /* Documentation.docc in Sources */,
+				611FF5C42B652586003BD5DD /* SceneDelegate.swift in Sources */,
+				61A840C12B60F70900B82755 /* WriteUseCaseImplementation.swift in Sources */,
+				61464F7B2B5F7CAF00DD9354 /* Jotunheimr+Ext.swift in Sources */,
+				61E82EC62B63A36100716241 /* WriteNFCConfigurator.swift in Sources */,
+				61E82EC92B63BDAB00716241 /* WriteNFCProtocols.swift in Sources */,
+				61F3EBAC2B61AF0100E593FB /* NFCRepositoryImplementation.swift in Sources */,
+				61464F3D2B5F4D4700DD9354 /* EncryptionServiceImplementation.swift in Sources */,
+				61464F722B5F6AD000DD9354 /* InputNFCPayload.swift in Sources */,
+				6161708A2B64ACAF00C04D38 /* ValidatePrivateKeyUseCaseImplementation.swift in Sources */,
+				61F3EBAA2B61AEAA00E593FB /* NFCRepositoryProtocol.swift in Sources */,
+				61464F6E2B5F6A9D00DD9354 /* NFCServiceImplementation.swift in Sources */,
+				61F3EBBE2B61C52200E593FB /* NFCWriteRequestMessage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		619171D42B54D395006B36EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		619171D52B54D395006B36EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		619171D72B54D395006B36EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Utopia-Crypto Payments Port/Application/Resources/Configuration/Utopia-Crypto Payments-Port.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Utopia-Crypto Payments Port/Application/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = Y7A8MFWTQP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Utopia-Crypto Payments Port/Application/Resources/Configuration/Utopia-Crypto-Payments-Port-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Utopia-Port";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shadudiix.com.Utopia-Crypto-Payments-Port";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		619171D82B54D395006B36EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Utopia-Crypto Payments Port/Application/Resources/Configuration/Utopia-Crypto Payments-Port.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Utopia-Crypto Payments Port/Application/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = Y7A8MFWTQP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Utopia-Crypto Payments Port/Application/Resources/Configuration/Utopia-Crypto-Payments-Port-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Utopia-Port";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shadudiix.com.Utopia-Crypto-Payments-Port";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		619171C32B54D392006B36EA /* Build configuration list for PBXProject "Utopia-Crypto Payments Port" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				619171D42B54D395006B36EA /* Debug */,
+				619171D52B54D395006B36EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		619171D62B54D395006B36EA /* Build configuration list for PBXNativeTarget "Utopia-Crypto Payments Port" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				619171D72B54D395006B36EA /* Debug */,
+				619171D82B54D395006B36EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		611061102B57588900310490 /* XCRemoteSwiftPackageReference "Jotunheimr" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shadyelmaadawy/Jotunheimr.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		611061112B57588900310490 /* Jotunheimr */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 611061102B57588900310490 /* XCRemoteSwiftPackageReference "Jotunheimr" */;
+			productName = Jotunheimr;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 619171C02B54D392006B36EA /* Project object */;
+}
